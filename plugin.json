@@ -1,0 +1,11 @@
+{
+  "name": "electron-dev-mcp",
+  "version": "1.0.0",
+  "description": "Electron.js development toolkit — scaffolding, security, analysis",
+  "author": "Solstice Impact Group LLC",
+  "entryPoints": {
+    "build": "npm run build",
+    "start": "npm run start"
+  },
+  "requiredEnv": []
+}

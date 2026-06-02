@@ -1,0 +1,40 @@
+{
+    "name": "electron-development-mcp",
+    "version": "1.0.0",
+    "description": "A local MCP server to provide Electron API expertise to AI agents.",
+    "type": "module",
+    "bin": {
+        "electron-development-mcp": "./build/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "node build/index.js",
+        "update-docs": "ts-node src/utils/fetchDocs.ts",
+        "watch": "tsc --watch",
+        "dev": "npm run build && npm start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mattsclimate/Electron-Development-MCP.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mattsclimate/Electron-Development-MCP/issues"
+    },
+    "homepage": "https://github.com/mattsclimate/Electron-Development-MCP/tree/main/electron-development-mcp#readme",
+    "author": "mattsclimate",
+    "license": "MIT",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.0",
+        "fuse.js": "^7.0.0",
+        "glob": "^13.0.6",
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
